@@ -1,0 +1,41 @@
+Game development C++ code for Rock paper scissors game.
+
+#include <cmath>
+#include <iostream.h>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+string game(string s1, string s2){
+	if(s1==s2){
+	  return "Draw";
+	}
+	else if(s1 == "rock && s2 == "scissors"){
+	  return "Player 1 won";
+	}
+	else if(s1 == "paper" && s2 == "rock"){
+	   return "Player 1 won";
+	}
+	else if(s1 == "scissors" && s2 == "paper"){
+	   return "Player 1 won";
+	}
+	else {
+	   return "Player 2 won";
+	}
+
+}
+
+int main() {
+string str1,str2,winner;
+
+cout<<"Enter the choice of Player 1: ";
+cin>>str1;
+
+cout<<"Enter the choice of Player 2: ";
+cin>>str2;
+
+winner=game(str1,str2);
+cout<<winner;
+
+return 0;
+}
