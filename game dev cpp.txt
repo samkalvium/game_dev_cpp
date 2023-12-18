@@ -28,6 +28,8 @@ string game(string s1, string s2){
 int main() {
 string str1,str2,winner;
 
+cout<<"Welcome to the game of Rock, Paper and Scissors."<<endl;
+cout<<"The game of Rock, Paper, Scissors is played like this, at the same time, two players display one of three symbols: a rock, paper, or scissors. A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it. "<<endl;
 cout<<"Enter the choice of Player 1: ";
 cin>>str1;
 
